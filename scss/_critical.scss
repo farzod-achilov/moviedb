@@ -1,0 +1,36 @@
+.container {
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-content {
+  max-width: 1700px;
+  padding: 0 15px;
+  padding-left: 380px;
+  margin-right: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: #171717;
+  font-family: "Philosopher", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-image: url("/img/Фон.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-container {
+  display: flex;
+  gap: 60px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:wght@400;500;700&display=swap");

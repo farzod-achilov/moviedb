@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <a href="/">
+            <img src="./img/Logo.svg" width="157" height="94" alt="logo" />
+          </a>
+          <nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Подборки</a></li>
+              <li><a href="#">По жанру</a></li>
+              <li><a href="#">Фильмы</a></li>
+              <li><a href="#">Сериалы</a></li>
+              <li><a href="#">Мультфильмы</a></li>
+              <li><a href="#">Аниме</a></li>
+              <li><a href="#">Актеры</a></li>
+            </ul>
+          </nav>
+          <div class="header-search">
+            <form>
+              <input placeholder="Поиск по сайту" type="text" />
+              <img src="./img/lupa-header.svg" alt="lupa-header" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <main>
+        <section>
+          <div class="container-content hero">
+            <div class="hero-section">
+              <div class="hero-section__content">
+                <p data-hero-pagination>
+                  Главная / Подборки / Лучшие фильмы всех времен
+                </p>
+                <h2>Лучшие фильмы всех времен</h2>
+              </div>
+              <swiper-container
+                data-hero-section
+                class="mySwiper hero-section__swiper"
+                pagination="false"
+                autoplay-delay="2000"
+                autoplay-disable-on-interaction="false"
+                effect="fade"
+              >
+              </swiper-container>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container-content">
+            <div class="best-films">
+              <div class="best-films__header">
+                <h2>Лучшие фильмы</h2>
+              </div>
+              <swiper-container
+                navigation="true"
+                loop="true"
+                pagination="false"
+                space-between="30"
+                slides-per-view="5"
+                data-best-film
+                class="best-films__content"
+              >
+              </swiper-container>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container-content">
+            <div class="best-films">
+              <div class="best-films__header">
+                <h2>Новые фильмы</h2>
+              </div>
+              <swiper-container
+                navigation="true"
+                loop="true"
+                pagination="false"
+                space-between="30"
+                slides-per-view="5"
+                data-new-film
+                class="best-films__content"
+              >
+              </swiper-container>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container-content">
+            <div class="best-films">
+              <div class="best-films__header">
+                <h2>Популярный фильмы</h2>
+              </div>
+              <swiper-container
+                navigation="true"
+                loop="true"
+                pagination="false"
+                space-between="30"
+                slides-per-view="5"
+                data-popular-film
+                class="best-films__content"
+              >
+              </swiper-container>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="best-film-about">
+              <div data-one-film class="best-film-about__content"></div>
+              <div data-two-film class="best-film-about__content"></div>
+            </div>
+          </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <script src="./js/app.js"></script>
+      </main>
+      <aside>
+        <div class="siteBar">
+          <div class="siteBar-first">
+            <div class="siteBar-first__header">
+              <h2>Похожие коллекции</h2>
+            </div>
+            <div class="siteBar-first__content">
+              <div class="siteBar-first__content-img">
+                <img
+                  src="./img/site-bar-1.png"
+                  width="92"
+                  height="98"
+                  alt="section"
+                />
+              </div>
+              <div class="siteBar-first__content-text">
+                <p><img src="./img/clock.svg" alt="clock" /> 2 недели назад</p>
+                <h2>
+                  Задача организации, в особенности же новая формировании.
+                </h2>
+              </div>
+            </div>
+            <div class="siteBar-first__content">
+              <div class="siteBar-first__content-img">
+                <img
+                  src="./img/site-bar-1.png"
+                  width="92"
+                  height="98"
+                  alt="section"
+                />
+              </div>
+              <div class="siteBar-first__content-text">
+                <p><img src="./img/clock.svg" alt="clock" /> 2 недели назад</p>
+                <h2>
+                  Задача организации, в особенности же новая формировании.
+                </h2>
+              </div>
+            </div>
+            <div class="siteBar-first__content">
+              <div class="siteBar-first__content-img">
+                <img
+                  src="./img/site-bar-1.png"
+                  width="92"
+                  height="98"
+                  alt="section"
+                />
+              </div>
+              <div class="siteBar-first__content-text">
+                <p><img src="./img/clock.svg" alt="clock" /> 2 недели назад</p>
+                <h2>
+                  Задача организации, в особенности же новая формировании.
+                </h2>
+              </div>
+            </div>
+            <div class="siteBar-first__content">
+              <div class="siteBar-first__content-img">
+                <img
+                  src="./img/site-bar-1.png"
+                  width="92"
+                  height="98"
+                  alt="section"
+                />
+              </div>
+              <div class="siteBar-first__content-text">
+                <p><img src="./img/clock.svg" alt="clock" /> 2 недели назад</p>
+                <h2>
+                  Задача организации, в особенности же новая формировании.
+                </h2>
+              </div>
+            </div>
+            <div class="siteBar-first__content">
+              <div class="siteBar-first__content-img">
+                <img
+                  src="./img/site-bar-1.png"
+                  width="92"
+                  height="98"
+                  alt="section"
+                />
+              </div>
+              <div class="siteBar-first__content-text">
+                <p><img src="./img/clock.svg" alt="clock" /> 2 недели назад</p>
+                <h2>
+                  Задача организации, в особенности же новая формировании.
+                </h2>
+              </div>
+            </div>
+            <div class="siteBar-first__content">
+              <div class="siteBar-first__content-img">
+                <img
+                  src="./img/site-bar-1.png"
+                  width="92"
+                  height="98"
+                  alt="section"
+                />
+              </div>
+              <div class="siteBar-first__content-text">
+                <p><img src="./img/clock.svg" alt="clock" /> 2 недели назад</p>
+                <h2>
+                  Задача организации, в особенности же новая формировании.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="siteBar-second"></div>
+        </div>
+      </aside>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__top">
+            <div class="footer__top-logo">
+              <img src="./img/footer-logo.svg" alt="logo" />
+            </div>
+            <nav class="footer__top-nav">
+              <ul>
+                <h2 class="footer__top-header">Меню</h2>
+                <li>Подборки</li>
+                <li>По жанру</li>
+                <li>Фильмы</li>
+                <li>Сериалы</li>
+                <li>Мультфильмы</li>
+                <li>Аниме</li>
+                <li>Актеры</li>
+              </ul>
+            </nav>
+            <div class="footer__top-border-wrapper">
+              <span class="footer__top-border"></span>
+            </div>
+            <div class="footer__top-about-us">
+              <h2 class="footer__top-header">О нас</h2>
+              <p>
+                Зная всё о кино, хочется поделиться этим с другими. Делитесь
+                фильмами, трейлерами, персонами и новостями в социальных сетях,
+                присваивайте рейтинги фильмам и обсуждайте их с друзьями и
+                подписчиками!
+              </p>
+              <p>
+                Интересные фильмы, ближайшие кинотеатры и любимых актеров можно
+                добавлять в «Избранное». Система покажет все связанные с ними
+                новости и новые трейлеры, подскажет, когда можно купить билет в
+                кино на интересующую премьеру. Присоединяйтесь!
+              </p>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-content">
+              <p>©Все права защищены MovieDB.ru 2021</p>
+            </div>
+            <div class="footer__bottom-socials">
+              <img src="./img/facebook.svg" alt="facebook" />
+              <img src="./img/instagram.svg" alt="instagram" />
+              <img src="./img/vk.svg" alt="vk" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
